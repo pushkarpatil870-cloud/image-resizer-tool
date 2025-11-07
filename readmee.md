@@ -1,43 +1,56 @@
-# Image Resizer
+# 🖼️ Image Resizer Tool
 
-A simple Python script to **batch resize and convert images** in a folder. This tool is ideal for automating image processing tasks such as resizing photos for websites, social media, or storage optimization.
+A simple batch **Image Resizer and Converter** built in **Python** using **Pillow (PIL)**.  
+It automatically resizes all images in a folder and saves them to an output folder.
 
-## Features
-- Resize multiple images in a folder at once.
-- Convert images to a different format (JPEG, PNG, etc.).
-- Supports `.jpg`, `.jpeg`, `.png`, `.bmp`, `.gif`.
-- Automatically creates an output folder for resized images.
-- Easy to customize width, height, and output format.
 
-## Requirements
-- Python 3.x
-- Pillow library
+## ⚙️ How to Run :
+1. Make sure Python is installed.  
+    Check with:  
+    python --version
+2. Install the required library:
+    pip install pillow
+3. Open CMD or VS Code Terminal.
+4. Go to the folder where image_resizer.py is saved:
+    cd path/to/your/project
+5. Create a folder named images_input and place your images inside it.
+    Run the script:
+    python image_resizer.py
+    The resized images will be saved in the images_output folder.
 
-Install Pillow via pip:
+## 🧾 Example Output
+Before → After resizing (400x400)
+When the script is run, all images inside the **images_input** folder are resized to the given dimensions (e.g., 400×400) and saved in **images_output**.
 
-```bash
-pip install Pillow
-Usage
-Clone this repository:
+**🔗 Input Image:** [View Input Image](animals_input.jpg)  
+**🔗 Output Image:** [View Output Image](animals_output.jpg)
 
-bash
-Copy code
-git clone https://github.com/yourusername/Image-Resizer.git
-Place images to resize in the input_images folder.
+<table>
+<tr>
+<td><img src="animals_input.jpg" width="300"></td>
+<td><img src="animals_output.jpg" width="300"></td>
+</tr>
+<tr>
+<td align="center">🌿 Original Image</td>
+<td align="center">🖼️ Resized Image (400×400)</td>
+</tr>
+</table>
 
-Open resize.py and configure your desired width, height, and format.
 
-Run the script:
+## 📋 Features
+- Resize all images in a folder automatically
+- Convert images to JPG format
+- Works with multiple formats (.png, .jpg, .jpeg, .bmp, .gif)
+- Creates output folder automatically
+- Simple and beginner-friendly
 
-bash
-Copy code
-python resize.py
-Check the output_images folder for resized images.
+## 🧠 Tools Used
+- Python
+- Pillow (PIL)
+- OS module
 
-Folder Structure
-css
-Copy code
-Image-Resizer/
-├─ input_images/      ← Place original images here
-├─ output_images/     ← Resized images will be saved here
+## 👨‍💻 Author
+Fahim Shaikh
+
+SY BTECH in Computer Science & Engineering
 └─ resize.py          ← Python script to resize images
