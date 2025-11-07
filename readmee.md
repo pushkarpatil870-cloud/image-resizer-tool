@@ -50,7 +50,8 @@ When the script is run, all images inside the **images_input** folder are resize
 - OS module
 
 ## 👨‍💻 Author
-Fahim Shaikh
+Pushkar Patil
 
 SY BTECH in Computer Science & Engineering
 └─ resize.py          ← Python script to resize images
+
